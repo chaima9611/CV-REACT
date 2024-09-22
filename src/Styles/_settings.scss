@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Nova+Round&display=swap');
+
+
+$font-1:'Nova Round', cursive;
+$font-2: 'Dosis', sans-serif;
+$font-3:'Josef sans', serif;
+
+$color-1: #F2C1BD;
+$color-2:#6c77F4;
+$color-3:rgb(99, 164, 233);
+$color-4:#F2808A;
+$color-5:#29bdd7;
+$color-6:#F2949C;
+$color-7:#F2A7A7;
+$white:#ddd;
+$black:#333;
+
+$borderRadius: 25px;
+$shadow:0 1px 3px #e7bbbb;
+$minHeight: 95vh;
+
+@mixin verticalCenter { // SNSE VERTICALE
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 1rem auto;
+    max-width: 1200px;
+    font-family: $font-1;
+    color: $black;
+}
+button {
+    cursor: pointer;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+
+}
+a:visited {
+    color: $black;
+}
+.home, .Knowledges, .portfelio, .contact {
+    display: flex;
+
+
+    @media screen and (max-width: 850px) {
+        display: block !important;
+        
+    }
+}
+.homeContent, .KnowledgesContent, .portfelioContent, .contactContent {
+    margin-left: .4rem;
+
+    @media screen and (max-width: 850px) {
+        margin-left: 0 !important;;
+        
+    }
+}

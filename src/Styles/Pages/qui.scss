@@ -1,0 +1,52 @@
+// Define breakpoints
+$mobile: 600px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Mixin for media queries
+// Define the mixin for font-size-responsive
+@mixin font-size-responsive($mobile-size, $desktop-size) {
+   font-size: $mobile-size;
+
+   @media (min-width: 1024px) {
+      font-size: $desktop-size;
+   }
+}
+
+@mixin respond-to($breakpoint) {
+   @if $breakpoint == mobile {
+      @media (max-width: $mobile) { @content; }
+   }
+   @else if $breakpoint == tablet {
+      @media (min-width: $mobile) and (max-width: $tablet) { @content; }
+   }
+   @else if $breakpoint == desktop {
+      @media (min-width: $desktop) { @content; }
+   }
+}
+
+// Responsive layout using Flexbox
+.container {
+   display: flex;
+   flex-wrap: wrap;
+
+   .item {
+      flex: 1 1 300px;
+      margin: 10px;
+
+      @include respond-to(mobile) {
+         flex: 1 1 100%; // Full width on mobile
+      }
+   }
+}
+
+// Responsive typography
+.header {
+   @include font-size-responsive(1.2rem, 2rem); // Font-size adjusts for different screens
+}
+
+// Responsive images
+img {
+   max-width: 100%;
+   height: auto;
+}
