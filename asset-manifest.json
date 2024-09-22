@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/CV-PORTF/static/css/main.463e41a1.css",
+    "main.js": "/CV-PORTF/static/js/main.0a55b5ed.js",
+    "static/js/453.da93cb64.chunk.js": "/CV-PORTF/static/js/453.da93cb64.chunk.js",
+    "static/media/map.jpg": "/CV-PORTF/static/media/map.3e5949c9b6f7cd03bd31.jpg",
+    "static/media/ترجمة.jpg": "/CV-PORTF/static/media/ترجمة.d6b25825d7473be2ab14.jpg",
+    "index.html": "/CV-PORTF/index.html",
+    "static/media/shape.svg": "/CV-PORTF/static/media/shape.1d026b20b3a18a74a971.svg",
+    "main.463e41a1.css.map": "/CV-PORTF/static/css/main.463e41a1.css.map",
+    "main.0a55b5ed.js.map": "/CV-PORTF/static/js/main.0a55b5ed.js.map",
+    "453.da93cb64.chunk.js.map": "/CV-PORTF/static/js/453.da93cb64.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.463e41a1.css",
+    "static/js/main.0a55b5ed.js"
+  ]
+}
